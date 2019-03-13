@@ -1,12 +1,16 @@
 def setup():
     size(150, 150)
-    background(200)
+    background(300, 200, 100)
     fill(0)
 
+def clear():
+    size(150,150)
+    background(300, 200, 100)
+    fill(0)
+    
 def draw():
     if mousePressed:
-        fill(0)
-        line(10, 40, 70, 100)
-    else :
-        fill(130)
-        rect(10, 10, 30, 30)
+        fill(250, 150, 50)
+        rect(50, 50, 50, 50)
+    else:
+        clear() 
